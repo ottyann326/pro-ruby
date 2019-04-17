@@ -31,6 +31,32 @@ puts "こんにちは\\nさようなら"
 name = 'Alice'
 puts "Hello,\#{name}!"
 
-puts 'He said. "Don\`t speak."
 
-puts "He said. \"Don`t speak.\""
+# データのあるなしで処理を変えたい場合の参考コード
+data = find_data
+if data != nil
+  "データがあります"
+else
+  "データがありません"
+end
+
+# 上記をRubyで書いた場合は、下記のようになる。（よく出る）
+data = find_data
+if data
+  "データがあります"
+else
+  "データがありません"
+end
+
+# &&は||より優先度が高いので、下記のようなルールで評価される。
+(条件1 && 条件2) || (条件3 && 条件4)
+
+if 条件A
+
+elsif 条件B
+
+elsif 条件C
+
+else
+
+end
