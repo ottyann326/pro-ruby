@@ -83,3 +83,8 @@ if day == 1
 end
 
 point *= 5 if day == 1
+
+
+def hello_world_2
+  "Hello,world!"
+end
